@@ -7,3 +7,13 @@ Explain the difference between installing a package
 with ^1.0.0, ~1.0.0, and 1.0.0 in the package.json dependencies. 
 
 What do these version specifiers mean?
+~1.0.0 means npm can install patch updates only.
+For example: 1.0.1, 1.0.2, etc.
+It will not update to 1.1.0.
+
+^1.0.0 means npm can install minor and patch updates.
+For example: 1.1.0, 1.2.0, or 1.0.1.
+It will not update to 2.0.0.
+
+1.0.0 means npm must use exactly version 1.0.0.
+No newer version will be automatically installed.
